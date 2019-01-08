@@ -1,0 +1,11 @@
+.top-bar, #mainTopMenuWrapper{
+    background-color: #f7d7d7;
+}
+@media (min-width: 992px){
+    #mainNavbarCollapsable {
+        background-color: #f7d7d7;
+    }
+    .no-touch #mainNavbarCollapsable ul.mainmenu>li:hover, .touch #mainNavbarCollapsable ul.mainmenu>li.hover, .no-touch #mainNavbarCollapsable ul.mainmenu>li>ul>li:hover, .touch #mainNavbarCollapsable ul.mainmenu>li>ul>li.hover {
+        background-color: #f7d7d7;
+    }
+}

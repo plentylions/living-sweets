@@ -1,0 +1,19 @@
+{
+    "version"           :   "2.17.1",
+    "license"           :   "AGPL-3.0",
+    "name"              :   "LivingSweets",
+    "marketplaceName"   :   {"de":"LivingSweets","en":"LivingSweets"},
+    "pluginIcon"        :   "icon_plugin_xs.png",
+    "authorIcon"        :   "icon_author_xs.png",
+    "email"             :   "info@plentylions.de",
+    "description"       :   "A LivingSweets theme for Legend.",
+    "shortDescription"  :   { "de": "Ein LivingSweets-Theme für Legend.", "en": "A LivingSweets theme for Legend." },
+    "namespace"         :   "LivingSweets",
+    "author"            :   "Plenty Lions GmbH",
+    "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ceres"],
+    "price"             :   0,
+    "categories"        :   [3518],
+    "type"              :   "theme",
+    "require"           :   ["Legend"],
+    "serviceProvider"   :   "LivingSweets\\Providers\\LivingSweetsServiceProvider"
+}
