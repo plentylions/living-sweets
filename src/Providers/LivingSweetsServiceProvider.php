@@ -30,7 +30,7 @@ class LivingSweetsServiceProvider extends ServiceProvider
 
         $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $container) {
             $container->setTemplates([
-                ResultFieldTemplate::TEMPLATE_BASKET_ITEM => 'EnergyLabel::ResultFields.BasketItem' // texts.technicalData
+                ResultFieldTemplate::TEMPLATE_BASKET_ITEM => 'LivingSweets::ResultFields.BasketItem' // texts.technicalData
             ]);
         }, self::PRIORITY);
     }
