@@ -1,5 +1,5 @@
 {
-    "version"           :   "2.17.1",
+    "version"           :   "3.0.1",
     "license"           :   "AGPL-3.0",
     "name"              :   "LivingSweets",
     "marketplaceName"   :   {"de":"LivingSweets","en":"LivingSweets"},
@@ -15,5 +15,20 @@
     "categories"        :   [3518],
     "type"              :   "theme",
     "require"           :   ["Legend"],
-    "serviceProvider"   :   "LivingSweets\\Providers\\LivingSweetsServiceProvider"
+    "serviceProvider"   :   "LivingSweets\\Providers\\LivingSweetsServiceProvider",
+    "dataProviders":
+    [
+        {
+            "key": "LivingSweets\\Containers\\BeforePlaceOrderContainer",
+            "name": "LivingSweets Chekout text Checkout.BeforePlaceOrder",
+            "description": "LivingSweets Chekout text Checkout.BeforePlaceOrder",
+            "defaultLayoutContainer": "Ceres::Checkout.BeforePlaceOrder"
+        },
+        {
+            "key": "LivingSweets\\Containers\\AfterItemContainer",
+            "name": "LivingSweets Basket details BasketList.AfterItem",
+            "description": "LivingSweets Basket details BasketList.AfterItem",
+            "defaultLayoutContainer": "Ceres::BasketList.AfterItem"
+        }
+    ]
 }
