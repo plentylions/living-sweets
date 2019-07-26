@@ -1,6 +1,10 @@
+.checkout .basket-item-tech-ls{
+    display: block;
+}
 .basket-item-tech-ls{
     font-size: 80%;
     color: #000;
+    display: none;
 }
 .basket-item-tech-ls ul{
     padding: 0;
