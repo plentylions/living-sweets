@@ -1,4 +1,5 @@
-.checkout .basket-item-tech-ls{
+.checkout .basket-item-tech-ls,
+.basket .basket-item-tech-ls{
     display: block;
 }
 .basket-item-tech-ls{
