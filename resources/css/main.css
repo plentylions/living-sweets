@@ -12,6 +12,9 @@
 .checkout-text-ls{
     font-weight: 700;
 }
+.basket-hover-checkout-text{
+    flex: 0 0 auto;
+}
 
 .top-bar, #mainTopMenuWrapper{
     background-color: #f7d7d7;

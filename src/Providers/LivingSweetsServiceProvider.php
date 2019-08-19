@@ -8,6 +8,7 @@ use Plenty\Plugin\Events\Dispatcher;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
+use IO\Helper\ComponentContainer;
 
 /**
  * Class LivingSweetsServiceProvider
@@ -26,6 +27,18 @@ class LivingSweetsServiceProvider extends ServiceProvider
     {
         $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container) {
             $container->addStyleTemplate('LivingSweets::Stylesheet');
+        }, self::PRIORITY);
+
+        $dispatcher->listen('IO.Component.Import', function (ComponentContainer $componentContainer)
+        {
+            if($componentContainer->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketPreview'){
+                $componentContainer->setNewComponentTemplate('LivingSweets::Basket.Components.BasketPreview');
+            }
+        }, self::PRIORITY);
+
+        $dispatcher->listen('IO.tpl.basket', function (TemplateContainer $container)
+        {
+            $container->setTemplate('LivingSweets::Basket.Basket');
         }, self::PRIORITY);
 
         $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $container) {

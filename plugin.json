@@ -19,12 +19,6 @@
     "dataProviders":
     [
         {
-            "key": "LivingSweets\\Containers\\BeforePlaceOrderContainer",
-            "name": "LivingSweets Chekout text Checkout.BeforePlaceOrder",
-            "description": "LivingSweets Chekout text Checkout.BeforePlaceOrder",
-            "defaultLayoutContainer": "Ceres::Checkout.BeforePlaceOrder"
-        },
-        {
             "key": "LivingSweets\\Containers\\AfterItemContainer",
             "name": "LivingSweets Basket details BasketList.AfterItem",
             "description": "LivingSweets Basket details BasketList.AfterItem",
